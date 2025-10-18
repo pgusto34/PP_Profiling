@@ -36,6 +36,45 @@ def wrap_stage_backward(stage, name):
             return orig_bwd_w(self, *args, **kwargs)
     stage.backward_weight_one_chunk = wrapped_bwd_w.__get__(stage, stage.__class__)
 
+def print_stage_durations(prof, prefix="stage"):
+    """
+    Print how long each forward/backward/weight pass took and show its stack trace.
+    Looks for record_function names like 'stage0_F_mb0', 'stage1_W_mb3', etc.
+    """
+
+    import re
+
+    # Regex to match stage markers like "stage0_F_mb2"
+    pat = re.compile(rf"{re.escape(prefix)}(\d+)_(\w)_mb(\d+)")
+
+    print("\n=== Stage timings and stacks ===\n")
+
+    for evt in prof.events():
+        m = pat.match(evt.name)
+        if not m:
+            continue
+
+        # Compute CPU time in ms
+        cpu_time_us = getattr(evt, "cpu_time_total", 0)
+        dur_ms = cpu_time_us / 1000.0 if cpu_time_us else 0.0
+
+        print(f"{evt.name:<20} | {dur_ms:8.3f} ms")
+
+        # Print stack if available
+        stack = getattr(evt, "stack", None)
+        if stack:
+            for f in reversed(stack):  # caller → callee
+                fn = getattr(f, "filename", None) or getattr(f, "file", None)
+                ln = getattr(f, "lineno", None) or getattr(f, "line", None)
+                nm = getattr(f, "name", None) or getattr(f, "func", None)
+                if fn and ln and nm:
+                    print(f"    {fn}:{ln} in {nm}")
+                else:
+                    print(f"    {f}")
+        else:
+            print("    (no Python stack captured)")
+
+        print()
 
 def run_pipeline(model_args, cmd_args):
    global world_size, rank, device
@@ -44,12 +83,10 @@ def run_pipeline(model_args, cmd_args):
 
    # Initialize profiler activity based on device availability
    activities = [ProfilerActivity.CPU]
-   if torch.cuda.is_available():
-      device = "cuda"
-      activities += [ProfilerActivity.CUDA]
-   elif torch.xpu.is_available():
-      device = "xpu"
-      activities += [ProfilerActivity.XPU]
+   # if torch.cuda.is_available():
+   #    activities += [ProfilerActivity.CUDA]
+   # elif torch.xpu.is_available():
+   #    activities += [ProfilerActivity.XPU]
    
    model = Transformer(model_args)
    model.to(device)
@@ -107,6 +144,7 @@ def run_pipeline(model_args, cmd_args):
       device=device
    )
 
+   # Print the pipeline schedule
    print(f"\n=== Pipeline order for rank {rank} ===")
    for step, action in enumerate(schedule.pipeline_order[rank]):
        if action is None:
@@ -114,13 +152,25 @@ def run_pipeline(model_args, cmd_args):
        stage_idx, op, mb = action
        print(f"t={step:03d} | stage={stage_idx} | op={op} | microbatch={mb}")
 
-   with profile(activities=activities, record_shapes=True) as prof:
+   prof_schedule = torch.profiler.schedule(wait=0, warmup=0, active=1, repeat=1)
+
+   with profile(
+       activities=activities, 
+       schedule=prof_schedule,
+       with_stack=True,
+       record_shapes=True,
+       experimental_config=torch._C._profiler._ExperimentalConfig(
+         verbose=True,
+         profile_all_threads=True,
+         capture_overload_names=True,
+      )) as prof:
       if rank == 0:
          schedule.step(x)
       elif rank == 1:
          losses = []
          output = schedule.step(target=y, losses=losses)
          print(f"final losses: {losses}")
+      prof.step()
 
    trace_dir = os.path.join(os.path.dirname(__file__), "traces")
    out_path = os.path.join(trace_dir, f"trace_{rank}.json")
@@ -143,6 +193,8 @@ def run_pipeline(model_args, cmd_args):
       cmd = ["python", "merge_traces.py", os.path.join(trace_dir,"user_only_trace_0.json"), os.path.join(trace_dir,"user_only_trace_1.json"), merged_out]
       subprocess.run(cmd, check=True)
       print(f"✅ Merged trace available at {merged_out}")
+   
+   # print_stage_durations(prof)
 
 if __name__ == "__main__":
    # Parse command line arguments
@@ -159,9 +211,12 @@ if __name__ == "__main__":
    global device, rank, world_size
    rank = int(os.environ["LOCAL_RANK"])
    world_size = int(os.environ["WORLD_SIZE"])
-   device = torch.device(f"cuda:{rank}") if cmd_args.cuda else torch.device("cpu")
-   backend = "nccl" if cmd_args.cuda else "gloo"
+   device = torch.device("cpu")
+   backend = "gloo"
+   print(f"[Rank {rank}] Kineto available:", torch.profiler.kineto_available())
+
    dist.init_process_group(backend=backend, rank=rank, world_size=world_size)
+   
 
    # Load model config
    model_args = LLAMA_DEBUG

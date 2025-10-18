@@ -1,0 +1,137 @@
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 5062.36028999956, "autograd_ms": null, "timestamp": 1759953954.1119094}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 6031.512565999947, "autograd_ms": null, "timestamp": 1759953960.1531892}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.0583889996050857, "autograd_ms": 0.0076339983934303746, "timestamp": 1759953964.061926}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 9246.934102000523, "autograd_ms": 9246.552051001345, "timestamp": 1759953973.310797}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 4295.246753999891, "autograd_ms": null, "timestamp": 1759953982.259204}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 1.8477009998605354, "autograd_ms": 0.14985599955252837, "timestamp": 1759953982.2758796}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 6006.47052900058, "autograd_ms": 6006.462834000558, "timestamp": 1759953988.2840326}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 5480.099031001373, "autograd_ms": null, "timestamp": 1759953998.514618}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.06928599941602442, "autograd_ms": 0.006963000487303361, "timestamp": 1759953998.5295124}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 5687.198793000789, "autograd_ms": 5687.1937140003865, "timestamp": 1759954004.2177877}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.06522600051539484, "autograd_ms": 0.008784998499322683, "timestamp": 1759954009.1931605}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 5521.923582999079, "autograd_ms": 5521.919233999142, "timestamp": 1759954014.7161958}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4849.5441539998865, "autograd_ms": null, "timestamp": 1759954442.127052}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 6912.516401996982, "autograd_ms": null, "timestamp": 1759954449.0505452}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4452.782272997865, "timestamp": 1759954516.4983807}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 6980.123847999494, "timestamp": 1759954523.49247}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.06286400093813427, "timestamp": 1759954527.5268521}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 8886.298542998702, "timestamp": 1759954536.414342}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 4112.33825599993, "timestamp": 1759954545.1092656}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 1.1391390034987126, "timestamp": 1759954545.1272767}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 6440.547763002542, "timestamp": 1759954551.5686064}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 5404.552770000009, "timestamp": 1759954561.3277266}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.058132998674409464, "timestamp": 1759954561.3439717}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 6406.123304997891, "timestamp": 1759954567.750978}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.044889999117003754, "timestamp": 1759954572.675034}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 5340.179509999871, "timestamp": 1759954578.0168438}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4665.887251998356, "timestamp": 1759954757.24234}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 7472.194475001743, "timestamp": 1759954764.7227697}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.05203600085224025, "timestamp": 1759954768.8817596}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 10185.909084997547, "timestamp": 1759954779.0700746}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 5369.3989790008345, "timestamp": 1759954789.0770202}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 1.825701998313889, "timestamp": 1759954789.096062}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 8379.48513900119, "timestamp": 1759954797.4777498}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 5912.822140999197, "timestamp": 1759954808.9587262}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.05787899863207713, "timestamp": 1759954808.971481}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 9566.167368000606, "timestamp": 1759954818.5386624}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 1.28753399985726, "timestamp": 1759954826.5034761}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 5216.055143999256, "timestamp": 1759954831.7206264}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4891.720832001738, "timestamp": 1759955374.2135146}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 6539.804798998375, "timestamp": 1759955380.7631404}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.05587499981629662, "timestamp": 1759955384.7356484}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 9300.926627998706, "timestamp": 1759955394.0388129}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 4683.584342998074, "timestamp": 1759955403.3694763}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 2.8986170000280254, "timestamp": 1759955403.393107}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 10872.672031000548, "timestamp": 1759955414.268219}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 6348.493428999063, "timestamp": 1759955425.9482114}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.04740399890579283, "timestamp": 1759955425.9676316}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 10090.569981999579, "timestamp": 1759955436.0592282}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.07532599920523353, "timestamp": 1759955441.8572242}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 6533.8785980020475, "timestamp": 1759955448.3926528}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4759.836519999226, "timestamp": 1759955680.4073792}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 7234.904346001713, "timestamp": 1759955687.6516075}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.060498001403175294, "timestamp": 1759955692.023314}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 14104.289292998146, "timestamp": 1759955706.1315167}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 5255.803551997815, "timestamp": 1759955715.2882166}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 4.041517000587191, "timestamp": 1759955715.3104825}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 9670.72271500001, "timestamp": 1759955724.9831495}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 6201.756819998991, "timestamp": 1759955734.9389322}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.19962900114478543, "timestamp": 1759955734.955945}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 6732.143613000517, "timestamp": 1759955741.6895204}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.05268600216368213, "timestamp": 1759955746.6038802}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 4823.7406040025235, "timestamp": 1759955751.4281492}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 12760.827183999936, "timestamp": 1759956017.4535758}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 12609.045674998924, "timestamp": 1759956280.514907}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4357.426876002137, "timestamp": 1759956427.820027}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 5622.867676000169, "timestamp": 1759956433.4515057}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.06089300222811289, "timestamp": 1759956437.3285973}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 6096.6300619984395, "timestamp": 1759956443.4264414}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4300.599409, "timestamp": 1759956845.6299856}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 5426.34059400001, "timestamp": 1759956851.0660994}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.06644800001254225, "timestamp": 1759956855.1095982}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 5342.245102999997, "timestamp": 1759956860.4528031}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 3600.596074000009, "timestamp": 1759956867.9339786}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 0.9034010000021908, "timestamp": 1759956867.9436922}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 5958.664663999997, "timestamp": 1759956873.9029412}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 3939.575230999992, "timestamp": 1759956881.7077}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.03653500000666554, "timestamp": 1759956881.7182174}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 4553.264389000006, "timestamp": 1759956886.2720983}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.043546000000560525, "timestamp": 1759956890.8243616}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 3634.581690999994, "timestamp": 1759956894.4598918}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4448.353209999994, "timestamp": 1759957126.560014}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 5506.875786000023, "timestamp": 1759957132.0782824}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.09028800002397475, "timestamp": 1759957135.7773204}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 5102.123222999979, "timestamp": 1759957140.8802857}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 3725.4490509999982, "timestamp": 1759957148.477685}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 0.6479259999991882, "timestamp": 1759957148.4891062}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 5397.557941999992, "timestamp": 1759957153.8874407}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 3871.070970000005, "timestamp": 1759957161.3736327}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.0364709999871593, "timestamp": 1759957161.3877525}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 4313.872203000017, "timestamp": 1759957165.7023044}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.0326699999959601, "timestamp": 1759957169.714625}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 3494.2964570000186, "timestamp": 1759957173.2099724}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4154.131859000017, "timestamp": 1759957286.1957479}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 4593.301725999936, "timestamp": 1759957290.7972956}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.05083700000341196, "timestamp": 1759957294.161355}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 4918.378450000091, "timestamp": 1759957299.0803177}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 3463.586427999985, "timestamp": 1759957306.259839}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 0.03296599993518612, "timestamp": 1759957306.268133}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 4095.3331829999797, "timestamp": 1759957310.3638365}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 3605.7211639999878, "timestamp": 1759957317.6964886}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.028272000008655596, "timestamp": 1759957317.7056997}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 3784.87798499998, "timestamp": 1759957321.4911027}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.02513100002943247, "timestamp": 1759957325.5367992}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 3601.9044859999667, "timestamp": 1759957329.139703}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4198.456510999904, "timestamp": 1759957395.8896818}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 4495.7436170000165, "timestamp": 1759957400.3928525}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.03480099996977515, "timestamp": 1759957403.7403686}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 4802.484780999976, "timestamp": 1759957408.5431979}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "F", "total_ms": 3580.596114000059, "timestamp": 1759957416.0287192}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 0.037425999948936806, "timestamp": 1759957416.0384011}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 3841.2588269999333, "timestamp": 1759957419.880073}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "F", "total_ms": 3574.435890000018, "timestamp": 1759957427.403473}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "B", "total_ms": 0.038417000041590654, "timestamp": 1759957427.4122305}
+{"rank": 0, "stage": 0, "microbatch": 2, "phase": "W", "total_ms": 4199.363802000107, "timestamp": 1759957431.6120741}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "B", "total_ms": 0.03680600002553547, "timestamp": 1759957435.7922506}
+{"rank": 0, "stage": 0, "microbatch": 3, "phase": "W", "total_ms": 3656.790090999948, "timestamp": 1759957439.4494083}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4710.732344999997, "timestamp": 1760825071.604006}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 8652.144169000167, "timestamp": 1760825080.26505}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.1099170001452876, "timestamp": 1760825084.3161037}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4729.849773000013, "timestamp": 1760825494.6994867}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 6404.912830999991, "timestamp": 1760825501.1142633}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.16809199999556768, "timestamp": 1760825505.3284168}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 10686.745585000011, "timestamp": 1760825516.0173345}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 1.0780570000008538, "timestamp": 1760825519.8518555}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 3639.79737599999, "timestamp": 1760825523.4927273}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4682.2105900000115, "timestamp": 1760825768.7630477}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 6070.479809000006, "timestamp": 1760825774.8430037}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.07692200000519733, "timestamp": 1760825778.7588265}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 5655.614547000027, "timestamp": 1760825784.4157772}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 2.0038829999862173, "timestamp": 1760825787.9045715}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 3701.5643039999873, "timestamp": 1760825791.6082773}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "F", "total_ms": 4205.010592999997, "timestamp": 1760825861.843532}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "F", "total_ms": 5341.466402000037, "timestamp": 1760825867.191853}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "B", "total_ms": 0.03895800000464078, "timestamp": 1760825870.7380996}
+{"rank": 0, "stage": 0, "microbatch": 0, "phase": "W", "total_ms": 4901.170188000037, "timestamp": 1760825875.6398005}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "B", "total_ms": 0.058933999980581575, "timestamp": 1760825879.3608184}
+{"rank": 0, "stage": 0, "microbatch": 1, "phase": "W", "total_ms": 3797.775832999946, "timestamp": 1760825883.159043}
